@@ -14,6 +14,7 @@ import {
     MDBListGroupItem,
 } from "mdb-react-ui-kit";
 import axios from "axios";
+import { loadStripe } from "@stripe/stripe-js";
 
 export default function Checkout() {
 
