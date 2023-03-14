@@ -12,6 +12,7 @@
     "bootstrap": "^5.2.3",
     "install": "^0.13.0",
     "mdb-react-ui-kit": "^5.1.0",
+    "nginx": "^1.0.8",
     "npm": "^9.6.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
