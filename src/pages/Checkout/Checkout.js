@@ -15,6 +15,7 @@ import {
 } from "mdb-react-ui-kit";
 import axios from "axios";
 import { loadStripe } from "@stripe/stripe-js";
+import { Button } from "bootstrap";
 
 export default function Checkout() {
 
@@ -44,6 +45,13 @@ export default function Checkout() {
         fetchData()
 
     }, [])
+
+    const handleCharge = (event) => {
+        event.preventDefault()
+        alert('Checkout')
+
+
+    }
 
     return (
         <>
@@ -159,7 +167,7 @@ export default function Checkout() {
                                                 </MDBCol>
                                             </MDBRow>
 
-                                            <MDBBtn size="lg" block className="position-absolute end-10">
+                                            <MDBBtn size="lg" className="position-absolute end-10" onClick={handleCharge}>
                                                 Continue to checkout
                                             </MDBBtn>
                                         </MDBCardBody>
